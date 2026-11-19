@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: agrimarket-uganda
+    runtime: node
+    plan: free
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: MONGO_URI
+        sync: false
+      - key: DB_NAME
+        value: agrimarket

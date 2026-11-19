@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AgriMarket Uganda</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="brand">
+      <h1>AgriMarket Uganda</h1>
+      <p>Connecting smallholder farmers directly to buyers</p>
+    </div>
+    <nav id="nav"></nav>
+  </header>
+
+  <main id="view"></main>
+
+  <dialog id="dlg">
+    <form id="form" autocomplete="off">
+      <h2 id="dlgTitle"></h2>
+      <p id="dlgHint" class="hint"></p>
+      <div id="fields" class="grid"></div>
+      <p id="formError" class="error" hidden></p>
+      <div class="actions">
+        <button type="button" id="cancelBtn" class="btn ghost">Cancel</button>
+        <button type="submit" class="btn primary">Save</button>
+      </div>
+    </form>
+  </dialog>
+
+  <div id="toast" hidden></div>
+  <script src="app.js"></script>
+</body>
+</html>
